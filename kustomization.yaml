@@ -1,0 +1,11 @@
+resources:
+  - crds.yaml
+  - istio.yaml
+  - net-istio.yaml
+
+patches:
+  - path: patches/istio-ingressgateway-nodeport.yaml
+    target:
+      kind: Service
+      name: istio-ingressgateway
+      namespace: istio-system

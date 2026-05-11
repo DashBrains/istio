@@ -9,3 +9,10 @@ patches:
       kind: Service
       name: istio-ingressgateway
       namespace: istio-system
+  - path: patches/knative-ingress-gateway-tls.yaml
+    target:
+      group: networking.istio.io
+      version: v1beta1
+      kind: Gateway
+      name: knative-ingress-gateway
+      namespace: knative-serving

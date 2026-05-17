@@ -2,6 +2,7 @@ resources:
   - crds.yaml
   - istio.yaml
   - net-istio.yaml
+  - prometheus-operator.yaml
 
 patches:
   - path: patches/istio-ingressgateway-nodeport.yaml
